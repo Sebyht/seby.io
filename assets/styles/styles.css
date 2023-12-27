@@ -1,0 +1,234 @@
+body,
+body *,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  color: inherit;
+  vertical-align: middle;
+}
+html {
+  font-size: 14px;
+}
+div.wrapper {
+  width: 90%;
+  margin: auto;
+}
+p {
+  line-height: 1.9rem;
+}
+body {
+  width: 100%;
+  max-width: 435px;
+  background-color: aliceblue;
+  margin: auto;
+}
+
+header {
+  width: 100%;
+  height: 250px;
+  background-image: url(../img/bg.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  z-index: -1;
+}
+
+header div {
+  position: absolute;
+  top: 70px;
+  left: 5%;
+  color: white;
+  font-size: 1.1rem;
+  width: 85%;
+  font-weight: bold;
+}
+div.profile div.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+div.profile {
+  background: white;
+  margin: 1rem auto;
+  margin-top: -1.5rem;
+  z-index: 99;
+  padding: 1rem 0.6rem;
+  border-radius: 0.5rem;
+  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+div.profile div.picture {
+  width: 60px;
+  height: 60px;
+  background-image: url(../img/seb.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+}
+div.profile p {
+  font-size: 1rem;
+  margin-bottom: 0.1em;
+}
+div.profile span {
+  font-weight: bold;
+  opacity: 0.7;
+}
+div.profile div.bar-dep {
+  height: 10px;
+  width: 40%;
+  margin: 0.1rem auto;
+  border-radius: 0.6rem;
+  background: orange;
+}
+div.profile div.education {
+  display: none;
+  opacity: 0;
+  transition: 0.5s ease-in-out;
+}
+div.profile div.education h2 {
+  font-size: 1rem;
+  margin: 1rem 0;
+  letter-spacing: 0.4rem;
+}
+div.profile div.education div {
+  margin-bottom: 0.8rem;
+}
+div.education span {
+  font-weight: normal;
+  display: block;
+  font-size: 0.8rem;
+}
+div.stats-dev {
+  background: white;
+  border-radius: 0.5rem;
+  box-shadow: 1px 1px 10px rgba(0 0, 0, 0.13);
+  padding: 1rem 1.7rem;
+  margin-bottom: 1.8rem;
+}
+div.stats-dev h2 {
+  font-size: 1rem;
+}
+div.progress {
+  height: 100%;
+  background: orange;
+  margin-top: 0.2rem;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border-radius: 0.2rem;
+}
+div.static-bar {
+  background-color: black;
+  width: 100%;
+  height: 9px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.2rem;
+  margin-top: 0.4rem;
+}
+
+div.stats-list {
+  margin: 1rem 0;
+}
+div.stats-list span.percent {
+  display: block;
+  text-align: end;
+  margin-top: 0.6rem;
+}
+
+div.project {
+  margin: 1rem 0;
+}
+div.cards {
+  margin: 1.6rem 0;
+}
+div.card {
+  background: white;
+  border: 1px solid rgba(0 0, 0, 0.13);
+  padding: 1rem;
+  padding-bottom: 0rem;
+  border-radius: 0.4rem;
+  overflow: hidden;
+  opacity: 0;
+  transition: 0.6s ease-in-out;
+}
+div.card div.icon {
+  width: 50px;
+  height: 50px;
+  background: black;
+  border-radius: 50%;
+  margin: 1rem 0;
+}
+div.cards div.card:first-child {
+  margin-bottom: 1.8rem;
+}
+div.cards div.card div.footer {
+  height: 100px;
+  background-size: cover;
+  border-radius: 0.5rem;
+}
+div.cards div.card:first-child div.footer {
+  background-image: url(../img/dictionnaire.png);
+  background-position: center 13%;
+}
+div.cards div.card:last-child div.footer {
+  background-image: url(../img/screen.png);
+  background-position: center 15%;
+}
+div.project > a {
+  display: inline-block;
+  margin: 1rem 0;
+  padding: 0.2rem 0;
+  text-decoration: none;
+  border-bottom: 2px solid black;
+}
+
+footer {
+  text-align: center;
+  width: 90%;
+  background: orange;
+  border-radius: 1.3rem;
+  padding: 1rem;
+  margin: 2rem auto;
+  opacity: 0;
+  transition: 0.6s ease-in-out;
+}
+footer h4 {
+  font-size: 2rem;
+}
+footer p {
+  width: 75%;
+  margin: 1rem auto;
+}
+footer a {
+  display: inline-block;
+  margin: 1rem 0;
+  padding: 1rem 1.6rem;
+  background: black;
+  color: white;
+  text-decoration: none;
+  border-radius: 0.5rem;
+}
+
+footer a > * {
+  display: inline-block;
+}
+@media screen and (min-width: 500px) {
+  body {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 330px) and (max-width: 500px) {
+  div.profile div.header {
+    justify-content: center;
+  }
+  div.profile div.header > * {
+    margin: 0 1.3rem;
+  }
+}
